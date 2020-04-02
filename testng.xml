@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+	<test name="Test">
+		<parameter name="Browser" value="FF" />
+		<classes>
+			<class name="testbase.NewmainClass" />
+		</classes>
+	</test>
+
+	<test name="Test1">
+		<parameter name="Browser" value="chrom" />
+		<classes>
+			<class name="testbase.NewmainClass" />
+		</classes>
+	</test>
+
+	<test name="Test2">
+		<parameter name="Browser" value="IE" />
+		<classes>
+			<class name="testbase.NewmainClass" />
+		</classes>
+	</test>
+
+	<test name="Test_Demo">
+		<classes>
+			<class name="testbase.DB2" />
+			<class name="testbase.TestDBDemo" />
+		</classes>
+	</test>
+
+</suite>
