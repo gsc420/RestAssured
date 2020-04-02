@@ -23,7 +23,7 @@ public class TestBrowser {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().pageLoadTimeout(20L, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
-			driver.get("http://www.facebook.com");
+			//driver.get("http://www.facebook.com");
 			
 			
 		} /*else if (browser.equalsIgnoreCase("chrom")) {
