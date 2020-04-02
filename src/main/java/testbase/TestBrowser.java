@@ -38,7 +38,7 @@ public class TestBrowser {
 			
 		}
 	*/	
-		else if (browser.equalsIgnoreCase("IE")) {
+		/*else if (browser.equalsIgnoreCase("IE")) {
 
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
@@ -47,7 +47,7 @@ public class TestBrowser {
 			driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
 			driver.get("https://www.rsystems.com/");
 			
-		}
+		}*/
 	}
 
 }

@@ -6,6 +6,7 @@ public class Employee {
 	private String lName;
 	private String gender;
 	private Double salary;
+	
 	public Employee(Integer id, String fName, String lName, String gender, Double salary) {
 		super();
 		this.id = id;
