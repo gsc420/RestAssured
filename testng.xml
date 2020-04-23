@@ -11,11 +11,11 @@
 		/> </classes> </test> -->
 
 	<test name="Test_Demo">
-		<parameter name="Browser" value="FF" />
+		
 		<classes>
 			<class name="testbase.DB2" />
 			<class name="testbase.TestDBDemo" />
-			<class name="testbase.RemoDemo"></class>
+			<class name="testbase.NewIEDemo"></class>
 
 		</classes>
 	</test>

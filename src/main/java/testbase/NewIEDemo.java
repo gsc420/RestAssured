@@ -3,6 +3,7 @@ package testbase;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 
@@ -14,11 +15,11 @@ public class NewIEDemo {
 	public void getIE() {
 		
 	
-	WebDriverManager.iedriver().setup();
-	driver = new InternetExplorerDriver();
+	WebDriverManager.chromedriver().setup();
+	driver = new ChromeDriver();
 	driver.manage().window().maximize();
-//	driver.manage().timeouts().pageLoadTimeout(20L, TimeUnit.SECONDS);
-//	driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
-	driver.get("https://www.rsystems.com/");
+	driver.manage().timeouts().pageLoadTimeout(20L, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
+	driver.get("https://www.google.com/");
 	}
 }
